@@ -1,17 +1,15 @@
-//Ejemplo for
+//Suma de nomina
 #include<stdio.h>
-int main(){
-    float NOM=0, Sal=0;
-    int i;
 
-    for(i=1; i<=15; i++){
-       printf("\nEl indice i es: %d\n", i);
-       printf("Ingrese el salario del profesor: ");
-       scanf("%f", &Sal);
-       NOM=NOM+Sal;
-       i=i+1;
+int main(){
+    float SAL=0, NOM=0;
+    int i;
+    
+    for (i=1;i<=15;i++) {
+        printf("Ingresar salario %d: ", i);
+        scanf("%f", &SAL);
+        NOM=NOM+SAL;
     }
-    printf("Resultado es: %f", &NOM);
+    printf("La nomina total es: %.f", NOM);
     return 0;
 }
-//printf("\nEl indice i es: %d\n", i);
